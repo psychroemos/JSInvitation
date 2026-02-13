@@ -238,6 +238,28 @@ body {
     border: 3px solid var(--dusty-rose-light);
 }
 
+/* Couple Photo Animated Entrance */
+.couple-entrance {
+    animation: coupleEntrance 1.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes coupleEntrance {
+    0% {
+        opacity: 0;
+        transform: scale(0.85);
+        filter: blur(8px);
+    }
+    40% {
+        opacity: 0.6;
+        filter: blur(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0);
+    }
+}
+
 /* Monogram */
 .monogram {
     display: flex;
@@ -822,6 +844,54 @@ body {
     color: var(--dusty-rose-dark);
 }
 
+/* Dress Code Reminder */
+.dresscode-reminder {
+    background: linear-gradient(135deg, rgba(255, 243, 224, 0.9), rgba(255, 236, 210, 0.9));
+    border: 2px dashed #c9a96e;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dresscode-reminder .reminder-label {
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #8b6914;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+.dresscode-reminder p {
+    font-size: 1.05rem;
+    color: #5a4a3a;
+    margin: 0;
+    font-weight: 500;
+}
+
+.color-black {
+    color: #1a1a1a;
+    font-weight: 700;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.color-white {
+    color: #888;
+    font-weight: 700;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    padding: 2px 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.color-pink {
+    color: #e75480;
+    font-weight: 700;
+    text-shadow: 0 0 1px rgba(231, 84, 128, 0.3);
+}
+
 .contact-info {
     margin-top: 25px;
     padding-top: 25px;
@@ -950,6 +1020,8 @@ body {
 
 .dresscode-image {
     margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -957,8 +1029,8 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 2px solid var(--dusty-rose-light);
-    box-shadow: 0 4px 15px rgba(212, 165, 165, 0.2);
+    border: 3px solid var(--dusty-rose);
+    padding: 15px;
 }
 
 .bottom-padding {

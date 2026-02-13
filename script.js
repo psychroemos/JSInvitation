@@ -34,8 +34,8 @@ function initSlideshows() {
 // =====================
 function initCountdown() {
     // Set your wedding date in Manila timezone (UTC+8)
-    // May 2, 2026 at 3:00 PM Manila Time
-    const weddingDateManila = new Date('2026-05-02T15:00:00+08:00');
+    // May 2, 2026 at 2:00 PM Manila Time (Ceremony starts at 2:00 PM)
+    const weddingDateManila = new Date('2026-05-02T14:00:00+08:00');
 
     function updateCountdown() {
         // Get current time in Manila timezone

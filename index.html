@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation - Samantha & Jayvee</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+    <meta property="og:title" content="Samantha & Jayvee's Wedding Invitation">
+    <meta property="og:description" content="We joyfully invite you to celebrate our wedding on May 2, 2026. #YouJayvMeSamoneToLove">
+    <meta property="og:image" content="section/Jayvee & Samantha.png">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +19,7 @@
         <!-- Header Section -->
         <header class="invitation-header">
             <div class="header-image fade-in">
-                <img src="section/Jayvee & Samantha.png" alt="Jayvee & Samantha" class="couple-photo">
+                <img src="section/Jayvee & Samantha.png" alt="Jayvee & Samantha" class="couple-photo couple-entrance">
             </div>
         </header>
 
@@ -162,20 +167,24 @@
             <h2 class="section-title">Frequently Asked Questions</h2>
             <div class="faq-container">
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question" role="button" tabindex="0">
                         <span class="faq-icon"><img src="icons/dress.png" alt="Dress"></span>
                         <span>What is the dress code?</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>The dress code is <strong>Formal</strong>. We'd love for you to wear <strong>beige</strong> or soft neutral tones to complement our wedding palette. Kindly avoid <strong>black, white, and pink</strong>.</p>
+                        <p>The dress code is <strong>Formal</strong>. We'd love for you to wear <strong>beige</strong> or soft neutral tones to complement our wedding palette.</p>
                         <div class="dresscode-image">
                             <img src="section/dresscode.png" alt="Dress Code Guide">
+                        </div>
+                        <div class="dresscode-reminder">
+                            <span class="reminder-label">💛 Gentle Reminder</span>
+                            <p>Please refrain from wearing <span class="color-black">black</span>, <span class="color-white">white</span>, or <span class="color-pink">pink</span> attire.</p>
                         </div>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question" role="button" tabindex="0">
                         <span class="faq-icon"><img src="icons/car.png" alt="Parking"></span>
                         <span>Is there parking available?</span>
                         <span class="faq-toggle">+</span>
@@ -185,17 +194,17 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question" role="button" tabindex="0">
                         <span class="faq-icon"><img src="icons/camera.png" alt="Camera"></span>
                         <span>Can we take photos during the ceremony?</span>
                         <span class="faq-toggle">+</span>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, we'd love for you to capture the memories! Please be mindful during the ceremony, and feel free to take as many photos as you'd like at the reception!</p>
+                        <p>Yes, we'd love for you to capture the memories! At the ceremony, please be discreet and mindful in taking pictures. We would appreciate it if you take them at your seats. Also, please avoid using flash. At the reception, feel free to take as many photos as you'd like! Please use our wedding hashtag: <span class="color-black">#YouJayvMeSamoneToLove</span></p>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question" role="button" tabindex="0">
                         <span class="faq-icon"><img src="icons/gift.png" alt="Gift"></span>
                         <span>What about gifts?</span>
                         <span class="faq-toggle">+</span>
@@ -205,7 +214,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question" role="button" tabindex="0">
                         <span class="faq-icon"><img src="icons/table.png" alt="Table"></span>
                         <span>Where should I sit at the reception?</span>
                         <span class="faq-toggle">+</span>
@@ -215,7 +224,7 @@
                     </div>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
+                    <div class="faq-question" role="button" tabindex="0">
                         <span class="faq-icon"><img src="icons/jw.png" alt="JW"></span>
                         <span>What happens at a Wedding of Jehovah's Witnesses?</span>
                         <span class="faq-toggle">+</span>
@@ -231,45 +240,45 @@
         <section class="gallery-section fade-in">
             <h2 class="section-title">Moments That Led Us Here</h2>
             <div class="gallery-grid" id="gallery-grid">
-                <div class="gallery-item"><img src="https://i.ibb.co/Jw7wS6N0/DSC05967-3.jpg" alt="Photo"></div>
-                <div class="gallery-item"><img src="https://i.ibb.co/S7WNMsKZ/DSC06052-21.jpg" alt="Photo"></div>
-                <div class="gallery-item"><img src="https://i.ibb.co/wFqW1TMc/DSC06103-10.jpg" alt="Photo"></div>
-                <div class="gallery-item"><img src="https://i.ibb.co/NdK53cXZ/DSC06112-11.jpg" alt="Photo"></div>
-                <div class="gallery-item"><img src="https://i.ibb.co/Z6XYjTns/DSC06153-16.jpg" alt="Photo"></div>
-                <div class="gallery-item"><img src="https://i.ibb.co/847ZKY5D/DSC06170-17.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/rRGVSTY2/DSC06184-22.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/kgKhqRvp/DSC06252-12.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/RTYg2wTC/DSC06302-1.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/JRcQVs4K/DSC06373-5.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/3msnXfFM/DSC06375-6.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/jZ4vvxw3/DSC06378-7.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/yB4fwLrd/DSC06433-18.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/4wy1bKHq/DSC06435-19.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/vvB39J4T/DSC06439-20.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/YF17DsKZ/DSC06447-23.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/tpz8vbpL/DSC06453-24.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/v4zM4kMn/DSC06458-25.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/hJZ8yvzF/DSC06459-26.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/p6frT8vM/DSC06461-27.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/chLD0LK8/DSC06496-4.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/fdGVPcfm/DSC06503-9.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/sdC6D0Lg/DSC06512-13.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/YBKm3zHm/DSC06515-14.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/WvRMGYY4/DSC06535-8.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/Kx2dS7fj/DSC08407-34.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/wrQt3HPy/DSC08439-38.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/PGydwgyv/DSC08455-30.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/xSHWp37y/DSC08485-41.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/VYSyPz0p/DSC08497-29.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/cSNtqPDk/DSC08531-37.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/PZ0GLvBJ/DSC08603-32.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/mF96txk1/DSC08632-39.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/HL56pPch/DSC08634-40.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/KccwthKp/DSC08695-35.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/DHYLRYN8/DSC08705-28.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/7J96ZSs6/DSC08714-31.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/BV6WGsT1/DSC08715-33.jpg" alt="Photo"></div>
-                <div class="gallery-item hidden"><img src="https://i.ibb.co/v6r1bJkG/DSC08741-36.jpg" alt="Photo"></div>
+                <div class="gallery-item"><img src="https://i.ibb.co/Jw7wS6N0/DSC05967-3.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://i.ibb.co/S7WNMsKZ/DSC06052-21.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://i.ibb.co/wFqW1TMc/DSC06103-10.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://i.ibb.co/NdK53cXZ/DSC06112-11.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://i.ibb.co/Z6XYjTns/DSC06153-16.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item"><img src="https://i.ibb.co/847ZKY5D/DSC06170-17.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/rRGVSTY2/DSC06184-22.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/kgKhqRvp/DSC06252-12.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/RTYg2wTC/DSC06302-1.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/JRcQVs4K/DSC06373-5.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/3msnXfFM/DSC06375-6.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/jZ4vvxw3/DSC06378-7.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/yB4fwLrd/DSC06433-18.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/4wy1bKHq/DSC06435-19.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/vvB39J4T/DSC06439-20.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/YF17DsKZ/DSC06447-23.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/tpz8vbpL/DSC06453-24.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/v4zM4kMn/DSC06458-25.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/hJZ8yvzF/DSC06459-26.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/p6frT8vM/DSC06461-27.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/chLD0LK8/DSC06496-4.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/fdGVPcfm/DSC06503-9.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/sdC6D0Lg/DSC06512-13.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/YBKm3zHm/DSC06515-14.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/WvRMGYY4/DSC06535-8.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/Kx2dS7fj/DSC08407-34.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/wrQt3HPy/DSC08439-38.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/PGydwgyv/DSC08455-30.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/xSHWp37y/DSC08485-41.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/VYSyPz0p/DSC08497-29.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/cSNtqPDk/DSC08531-37.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/PZ0GLvBJ/DSC08603-32.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/mF96txk1/DSC08632-39.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/HL56pPch/DSC08634-40.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/KccwthKp/DSC08695-35.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/DHYLRYN8/DSC08705-28.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/7J96ZSs6/DSC08714-31.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/BV6WGsT1/DSC08715-33.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
+                <div class="gallery-item hidden"><img src="https://i.ibb.co/v6r1bJkG/DSC08741-36.jpg" alt="Jayvee & Samantha" loading="lazy"></div>
             </div>
             <button class="gallery-toggle-btn" id="gallery-toggle-btn" onclick="toggleGallery()">
                 <span>Show More Photos</span>
@@ -289,7 +298,7 @@
 
         <!-- Footer -->
         <footer class="invitation-footer fade-in">
-            <p class="hashtag">#SamanthaAndJayvee</p>
+            <p class="hashtag">#YouJayvMeSamoneToLove</p>
             <p class="footer-text">With all our love, we invite you to witness the beginning of our forever</p>
             <div class="hearts">
                 <span>♥</span>
@@ -309,28 +318,6 @@
 
     <script src="script.js"></script>
     <script>
-        // FAQ toggle function
-        window.toggleFaq = function(element) {
-            var faqItem = element.parentElement;
-            var allFaqItems = document.querySelectorAll('.faq-item');
-            allFaqItems.forEach(function(item) {
-                if (item !== faqItem && item.classList.contains('active')) {
-                    item.classList.remove('active');
-                }
-            });
-            faqItem.classList.toggle('active');
-        };
-
-        // Add click event listeners to FAQ questions as backup
-        document.addEventListener('DOMContentLoaded', function() {
-            var faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(function(question) {
-                question.addEventListener('click', function() {
-                    toggleFaq(this);
-                });
-            });
-        });
-
         // Gallery toggle function
         var galleryExpanded = false;
         window.toggleGallery = function() {
@@ -384,7 +371,5 @@
             }
         });
     </script>
-    </script>
 </body>
 </html>
-
