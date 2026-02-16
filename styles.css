@@ -1029,8 +1029,10 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 3px solid var(--dusty-rose);
-    padding: 15px;
+    border: 5px solid var(--dusty-rose);
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(212, 165, 165, 0.3);
 }
 
 .bottom-padding {
@@ -1362,6 +1364,15 @@ body {
         height: 250px;
         aspect-ratio: 16 / 9;
     }
+
+    .dresscode-image {
+        padding: 15px;
+    }
+
+    .dresscode-image img {
+        border: 6px solid var(--dusty-rose);
+        padding: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1465,5 +1476,16 @@ body {
         max-width: 100%;
         height: 200px;
         aspect-ratio: 16 / 9;
+    }
+
+    .dresscode-image {
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .dresscode-image img {
+        border: 7px solid var(--dusty-rose);
+        padding: 35px;
     }
 }
