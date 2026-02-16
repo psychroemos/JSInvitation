@@ -1029,7 +1029,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    border: 5px solid var(--dusty-rose);
+    border: 3px solid var(--dusty-rose);
     padding: 25px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 12px rgba(212, 165, 165, 0.3);
@@ -1370,8 +1370,8 @@ body {
     }
 
     .dresscode-image img {
-        border: 6px solid var(--dusty-rose);
-        padding: 30px;
+        border: 3px solid var(--dusty-rose);
+       
     }
 }
 
@@ -1485,7 +1485,6 @@ body {
     }
 
     .dresscode-image img {
-        border: 7px solid var(--dusty-rose);
-        padding: 35px;
+        border: 3px solid var(--dusty-rose);
     }
 }
