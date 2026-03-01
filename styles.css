@@ -1021,7 +1021,7 @@ body {
 .dresscode-image {
     margin-top: 15px;
     margin-bottom: 25px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -1030,7 +1030,7 @@ body {
     height: auto;
     border-radius: 10px;
     border: 3px solid var(--dusty-rose);
-    padding: 25px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 12px rgba(212, 165, 165, 0.3);
 }
@@ -1366,12 +1366,12 @@ body {
     }
 
     .dresscode-image {
-        padding: 15px;
+        padding: 5px;
     }
 
     .dresscode-image img {
-        border: 3px solid var(--dusty-rose);
-       
+        border: 2px solid var(--dusty-rose);
+        padding: 8px;
     }
 }
 
@@ -1479,12 +1479,13 @@ body {
     }
 
     .dresscode-image {
-        padding: 10px;
+        padding: 5px;
         margin-top: 20px;
         margin-bottom: 30px;
     }
 
     .dresscode-image img {
-        border: 3px solid var(--dusty-rose);
+        border: 2px solid var(--dusty-rose);
+        padding: 5px;
     }
 }
